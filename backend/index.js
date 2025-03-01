@@ -1,9 +1,18 @@
 const express=require("express")
 const cors=require("cors")
 const mongoose=require("mongoose")
+const allowedOrigins = ['https://bulk-mail-frontend.onrender.com'];
+
+
 
 const app=express()
-app.use(cors())
+
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // if using cookies/auth
+}));
+
 
 app.use(express.json())
 
