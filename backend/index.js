@@ -31,7 +31,7 @@ const credentials=mongoose.model("credential",{},"bulkmail")
 
 
 
-app.post("/sendmail",function(req,res){
+app.post("https://bulk-mail-frontend.onrender.com/sendmail",function(req,res){
    
 var message=req.body.msg
 var email=req.body.email
