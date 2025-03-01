@@ -9,7 +9,7 @@ app.use(express.json())
 
 const nodemailer=require("nodemailer")
 
-mongoose.connect("mongodb://127.0.0.1:27017/mail").then(function(){
+mongoose.connect("mongodb+srv://swetha:123@cluster0.h8ebz.mongodb.net/mail?retryWrites=true&w=majority&appName=Cluster0").then(function(){
     console.log("Database connected")
 }).catch(function(){
     console.log("not connected")
